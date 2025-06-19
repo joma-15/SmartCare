@@ -1,0 +1,38 @@
+.quoteText{
+  margin-bottom: 100px;
+}
+ul {
+  padding-left: 10px;
+  margin: 0;
+  color: black;
+}
+.benefits{
+  padding-left: 20px;
+}
+.benefits p{
+  font-size: 30px;
+  line-height: 1.51;
+}
+
+/* Responsive styles for tablets and smaller screens */
+@media (max-width: 768px) {
+  .benefits p {
+    font-size: 0.95rem;
+    line-height: 2;
+    padding-left: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .benefits p {
+    font-size: 0.9rem;
+    line-height: 2.2;
+    padding-left: 16px;
+  }
+}
+
+@media (max-width: 992px){
+  .about-image{
+    display: none;
+  } 
+}
