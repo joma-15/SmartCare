@@ -103,6 +103,12 @@
           display: none;
         }
       }
+
+      .benefits-list {
+        list-style: disc;
+        padding-left: 1.5rem; /* ✅ Correct side */
+        margin-left: 1rem; /* Optional: more spacing */
+      }
     </style>
   </head>
 
@@ -118,13 +124,13 @@
             <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="LOA.html">LOA</a>
+            <a class="nav-link" href="LOA.html">LOA</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="Clinic.html">Providers</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="APE.html">APE</a>
+            <a class="nav-link active" href="APE.html">APE</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Disabled</a>
@@ -136,26 +142,39 @@
       </div>
     </nav>
 
+    <div>
+      <h1>Benefits</h1>
+      <ul class="benefits-list">
+        <li>Physical Examination</li>
+        <li>Complete Blood Count</li>
+        <li>Urinalysis</li>
+        <li>Fecalysis</li>
+        <li>Chest X-ray</li>
+        <li>ECG – <em>(Optional) For members 35 years old and above</em></li>
+        <li>
+          Pap’s Smear – <em>(Optional) For members 35 years old and above</em>
+        </li>
+      </ul>
+    </div>
+
     <!-- Cards Section -->
     <div class="container py-5">
       <div class="row g-4 justify-content-center">
         <!-- Card 1 -->
         <div class="col-12 col-md-6 col-lg-4 d-flex">
           <div class="card bg-danger text-white w-100">
-            <img src="assets/images/logo smartcare.png" class="card-img-top" alt="Logo" />
+            <img
+              src="assets/images/logo smartcare.png"
+              class="card-img-top"
+              alt="Logo"
+            />
             <div class="card-body bg-primary d-flex flex-column">
-              <h5 class="card-title">Instant LOA Request</h5>
-              <p class="card-text">Via Heyphil App for PHP 1,500 and below.</p>
+              <h5 class="card-title">Clinic & Hospitals</h5>
               <div class="mt-auto">
                 <a
-                  href="https://play.google.com/store/apps/details?id=com.app.heyphildigimedvtwo"
+                  href="https://shop.philcare.com.ph/accredited-hospitals"
                   class="btn btn-success w-100"
-                  >Android - Proceed</a
-                >
-                <a
-                  href="https://apps.apple.com/ph/app/heyphil-2-0/id1585092194"
-                  class="btn btn-success w-100"
-                  >iOS - Proceed</a
+                  >Proceed</a
                 >
               </div>
             </div>
@@ -165,15 +184,16 @@
         <!-- Card 2 -->
         <div class="col-12 col-md-6 col-lg-4 d-flex">
           <div class="card bg-danger text-white w-100">
-            <img src="assets/images/logo smartcare.png" class="card-img-top" alt="Logo" />
+            <img
+              src="assets/images/logo smartcare.png"
+              class="card-img-top"
+              alt="Logo"
+            />
             <div class="card-body bg-primary d-flex flex-column">
-              <h5 class="card-title">12–24 Hours LOA Request</h5>
-              <p class="card-text">
-                LOA Issuance is 12–24 hours and received via email. For lab requests, attach physician’s diagnosis/prescription.
-              </p>
+              <h5 class="card-title">Physician</h5>
               <div class="mt-auto">
                 <a
-                  href="https://forms.zohopublic.com/claim135/form/PhilcareLOALetterofAuthorization"
+                  href="https://philcare-my.sharepoint.com/:x:/g/personal/cdt_philcare_com_ph/EX7PU_k6hi9NrOWagwCbMgwBg3a6SEx0S8MqW32ZuAmcQg?e=UrVNEL"
                   class="btn btn-success w-100"
                   >Proceed</a
                 >
@@ -185,47 +205,22 @@
         <!-- Card 3 -->
         <div class="col-12 col-md-6 col-lg-4 d-flex">
           <div class="card bg-danger text-white w-100">
-            <img src="assets/images/logo smartcare.png" class="card-img-top" alt="Logo" />
+            <img
+              src="assets/images/logo smartcare.png"
+              class="card-img-top"
+              alt="Logo"
+            />
             <div class="card-body bg-primary d-flex flex-column">
-              <h5 class="card-title">FB Messenger LOA Request</h5>
-              <p class="card-text">
-                Request your LOA via Facebook Messenger for convenience.
-              </p>
+              <h5 class="card-title">Dental</h5>
               <div class="mt-auto">
                 <a
-                  href="https://web.facebook.com/philcareph/"
+                  href="https://philcare-my.sharepoint.com/:x:/g/personal/cdt_philcare_com_ph/EfbLhnsrLQZOt-SgQv4nndEB2B4HgY1gpq8dqmiwyR4agw?e=waggqU&nav=MTVfezMxNDkxRjFFLTM1RDQtNDA4My04NTQxLUYzQjc1MEM1RjJFQ30"
                   class="btn btn-success w-100"
                   >Proceed</a
                 >
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Note -->
-    <div class="container mb-4">
-      <h4 class="text-danger">Note:</h4>
-      <p class="fs-5">
-        Kindly check first availability of the Physician prior to clinic visit, to avoid procedure reschedule.
-      </p>
-    </div>
-
-    <!-- Instruction Images -->
-    <div class="container instruction-container">
-      <div class="row g-3">
-        <div class="col-12 col-md-6 col-lg-3">
-          <img src="assets/images/link image/LOA Request/LOA Process 1.png" alt="Step 1" />
-        </div>
-        <div class="col-12 col-md-6 col-lg-3">
-          <img src="assets/images/link image/LOA Request/LOA Process 2.png" alt="Step 2" />
-        </div>
-        <div class="col-12 col-md-6 col-lg-3">
-          <img src="assets/images/link image/LOA Request/LOA Process 4.png" alt="Step 3" />
-        </div>
-        <div class="col-12 col-md-6 col-lg-3">
-          <img src="assets/images/link image/LOA Request/LOA Process 4.png" alt="Step 4" />
         </div>
       </div>
     </div>
