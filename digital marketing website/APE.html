@@ -24,6 +24,8 @@
         flex-grow: 1;
         display: flex;
         flex-direction: column;
+        border-radius: 12px;
+        overflow: hidden;
       }
 
       .card:hover {
@@ -65,7 +67,6 @@
         margin: 0;
       }
 
-      /* ✅ Custom active link style */
       .nav-link.active {
         color: blue !important;
         font-weight: bold;
@@ -75,50 +76,76 @@
         color: blue !important;
       }
 
-      .benefits {
-        padding-left: 20px;
-      }
-
-      .benefits p {
-        font-size: 1.2rem;
-        line-height: 1.6;
-      }
-
-      @media (max-width: 768px) {
-        .benefits p {
-          font-size: 0.95rem;
-          padding-left: 18px;
-        }
-      }
-
-      @media (max-width: 480px) {
-        .benefits p {
-          font-size: 0.9rem;
-          padding-left: 16px;
-        }
-      }
-
-      @media (max-width: 992px) {
-        .about-image {
-          display: none;
-        }
+      h1,
+      h3 {
+        text-align: center;
+        margin: 30px 0;
+        font-weight: bold;
+        color: #343a40;
       }
 
       .benefits-list {
         list-style: disc;
-        padding-left: 1.5rem; /* ✅ Correct side */
-        margin-left: 1rem; /* Optional: more spacing */
+        padding-left: 1.5rem;
+        margin: 0 auto;
+        max-width: 700px;
+      }
+
+      .note {
+        background-color: #e0f7fa;
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 10px;
+        width: 90%;
+        max-width: 900px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .notes-list {
+        list-style: disc;
+        padding-left: 1.5rem;
+      }
+
+      .card-img-top {
+        height: 180px;
+        object-fit: contain;
+        background-color: #fff;
+        padding: 10px;
+      }
+
+      @media (max-width: 576px) {
+        .card-img-top {
+          height: 120px;
+        }
+
+        .card-title {
+          font-size: 1.1rem;
+        }
       }
     </style>
   </head>
 
   <body>
-    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm px-3">
       <a class="navbar-brand" href="#">
         <img src="assets/images/logo smartcare.png" alt="SmartCare Logo" />
       </a>
-      <div class="collapse navbar-collapse justify-content-end">
+
+      <!-- ✅ Navbar toggler button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- ✅ Collapsible menu with ID that matches data-bs-target -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
@@ -133,16 +160,14 @@
             <a class="nav-link active" href="APE.html">APE</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Disabled</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Another Link</a>
+            <a class="nav-link" href="ICE.html">ICE Materials</a>
           </li>
         </ul>
       </div>
     </nav>
 
-    <div>
+    <!-- Benefits Section -->
+    <div class="container">
       <h1>Benefits</h1>
       <ul class="benefits-list">
         <li>Physical Examination</li>
@@ -153,6 +178,23 @@
         <li>ECG – <em>(Optional) For members 35 years old and above</em></li>
         <li>
           Pap’s Smear – <em>(Optional) For members 35 years old and above</em>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Note Section -->
+    <div class="note">
+      <h3>Note:</h3>
+      <ul class="notes-list">
+        <li>
+          APE may be availed at PhilCare owned clinics and Affiliated clinics.
+        </li>
+        <li>
+          PhilCare may conduct APE on-site at the Client’s work site provided
+          that there are at least fifty (50) committed and guaranteed paid
+          Members scheduled for examination and the Client notifies PhilCare
+          three (3) weeks in advance of desired schedule. PhilCare reserves the
+          right to assign the APE on-site provider.
         </li>
       </ul>
     </div>

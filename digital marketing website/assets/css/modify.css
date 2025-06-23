@@ -36,4 +36,8 @@ ul {
     display: none;
   } 
 }
-
+@media (max-width: 992px){
+  .contact-message{
+    width: 250vh;
+  }
+}
