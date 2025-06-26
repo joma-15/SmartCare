@@ -51,3 +51,127 @@ ul {
 .image-bg{
   opacity: 0.5;
 }
+
+/* Services Section Styling */
+.our-services {
+  padding: 80px 0;
+  background-color: #f7f7f7;
+}
+
+.service-card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-container {
+  height: 150px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-card .card-img-top {
+  height: 100%;
+  width: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.service-card .card-body {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 150px);
+}
+
+.service-card .card-title {
+  color: #2a2a2a;
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.service-card .card-text {
+  color: #6a6a6a;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  flex-grow: 1;
+  margin-bottom: 20px;
+}
+
+.service-card .btn {
+  align-self: flex-start;
+  background-color: #4f8ff7;
+  border: none;
+  padding: 8px 20px;
+  font-size: 0.9rem;
+  transition: all 0.3s;
+}
+
+.service-card .btn:hover {
+  background-color: #3a7be0;
+  transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .card-img-container {
+    height: 130px;
+  }
+}
+
+@media (max-width: 767px) {
+  .service-card {
+    margin-bottom: 30px;
+  }
+  
+  .card-img-container {
+    height: 180px;
+  }
+}
+
+/* Plans Heading Styling */
+.plans {
+  color: #2a2a2a;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.plans:after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background-color: #4f8ff7;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Additional Spacing */
+.mt-5 {
+  margin-top: 3rem !important;
+}
+
+.mb-5 {
+  margin-bottom: 3rem !important;
+}
+
+/* Center alignment for text */
+.text-center {
+  text-align: center !important;
+}
