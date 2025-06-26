@@ -41,3 +41,13 @@ ul {
     width: 250vh;
   }
 }
+@media (max-width: 992px) {
+  .section-heading{
+    margin-top: 60px;
+  }
+  
+}
+
+.image-bg{
+  opacity: 0.5;
+}

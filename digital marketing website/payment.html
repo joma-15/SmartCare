@@ -79,6 +79,19 @@
       navigator.clipboard.writeText(text);
       alert("Copied to clipboard!");
     }
+
+    async function sendEmail(){
+      const emailAddress = "adelantarjhonmarcel@gmail.com"; 
+
+      try {
+        //fetch data from the email js api 
+        const data = fetch('email/js'); 
+        console.log('the data has been fetch successfully', data); 
+        
+      } catch (error) {
+        console.log('An errored has been occured')
+      }
+    }
   </script>
 
 </body>
