@@ -1,11 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>View PPT</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .button {
+      padding: 12px 20px;
+      margin: 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #45a049;
+    }
+
+    .viewer-container {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: #000000cc; /* semi-transparent background */
+      z-index: 9999;
+    }
+
+    #pptViewer {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .close-button {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      background-color: #ff4444;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      font-size: 14px;
+      border-radius: 4px;
+      cursor: pointer;
+      z-index: 10000;
+    }
+
+    .close-button:hover {
+      background-color: #cc0000;
+    }
+
+    .main-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+  </style>
 </head>
 <body>
-    <iframe src="" frameborder="0"></iframe>
+  <div class="main-container">
+  <button class="button" onclick="showPPT()" class="view">📊 View Presentation</button>
+
+  <div class="viewer-container" id="viewerContainer">
+    <button class="close-button" onclick="closeViewer()">✖ Close</button>
+    <iframe id="pptViewer"></iframe>
+  </div>
+  </div>
+
+  <script>
+    function showPPT() {
+      const pptURL = 'assets/tools/SMARTCARE-BENEFIT-PRESENTATION (1).pptx'; // Replace with your actual link
+      const viewerURL = `assets/tools/SMARTCARE-BENEFIT-PRESENTATION (1).pptx`;
+
+      document.getElementById('pptViewer').src = viewerURL;
+      document.getElementById('viewerContainer').style.display = 'block';
+    }
+
+    function closeViewer() {
+      document.getElementById('pptViewer').src = '';
+      document.getElementById('viewerContainer').style.display = 'none';
+    }
+  </script>
+
 </body>
 </html>

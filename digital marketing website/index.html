@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="assets/css/animated.css" />
     <link rel="stylesheet" href="assets/css/owl.css" />
     <link rel="stylesheet" href="assets/css/modify.css" />
+    <script src="enrollment.js"></script>
   </head>
 
   <body>
@@ -177,176 +178,105 @@
 
     <div id="services" class="our-services section">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-6 offset-lg-3">
+        <div class="row align-items-center">
+          <!-- Left Column - Image -->
+          <div class="col-lg-6">
             <div
-              class="section-heading wow bounceIn"
-              data-wow-duration="1s"
-              data-wow-delay="0.2s"
-            ></div>
-          </div>
-        </div>
-        <div class="row">
-          <!-- 100,000 Health Plans Section -->
-          <div class="col-12 text-center mb-5">
-            <h1 class="plans">100,000 Health Plans</h1>
-          </div>
-
-          <!-- Row 1 -->
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div
-              class="card service-card h-100 wow fadeInUp"
+              class="service-image-container wow fadeInLeft"
               data-wow-duration="1s"
               data-wow-delay="0.3s"
             >
-              <div class="card-img-container">
-                <img
-                  src="assets/images/about-left-image.png"
-                  class="card-img-top"
-                  alt="Service Image"
-                />
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Ward - 100K</h5>
-                <p class="card-text">
-                  -100K ABL<br />
-                  -Inpatient, Outpatient, Emergency, APE, Mental Care &
-                  Insurance<br />
-                  -Ward Room
-                </p>
-                <a href="#" class="btn btn-primary">&#8369; 1,200 Monthly</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div
-              class="card service-card h-100 wow fadeInUp"
-              data-wow-duration="1s"
-              data-wow-delay="0.4s"
-            >
-              <div class="card-img-container">
-                <img
-                  src="assets/images/about-left-image.png"
-                  class="card-img-top"
-                  alt="Service Image"
-                />
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Semi Private - 100K</h5>
-                <p class="card-text">
-                  -100K ABL<br />
-                  -Inpatient, Outpatient, Emergency, APE, Mental Care &
-                  Insurance<br />
-                  -Semi Private Room
-                </p>
-                <a href="#" class="btn btn-primary">&#8369; 1,800 Monthly</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div
-              class="card service-card h-100 wow fadeInUp"
-              data-wow-duration="1s"
-              data-wow-delay="0.5s"
-            >
-              <div class="card-img-container">
-                <img
-                  src="assets/images/about-left-image.png"
-                  class="card-img-top"
-                  alt="Service Image"
-                />
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Private - 100k</h5>
-                <p class="card-text">
-                  -100K ABL<br />
-                  -Inpatient, Outpatient, Emergency, APE, Mental Care &
-                  Insurance<br />
-                  -Private Room
-                </p>
-                <a href="#" class="btn btn-primary">&#8369; 2,800 Monthly</a>
-              </div>
+              <img
+                src="assets/images/about-left-image.png"
+                alt="SmartCare Services"
+                class="img-fluid rounded"
+                style="max-width: 80%"
+              />
             </div>
           </div>
 
-          <!-- 60,000 Health Plans Section -->
-          <div class="col-12 text-center mt-5 mb-5">
-            <h1 class="plans">60,000 Health Plans</h1>
-          </div>
-
-          <!-- Row 2 -->
-          <div class="col-lg-4 col-md-6 mb-4">
+          <!-- Right Column - Radio Form -->
+          <div class="col-lg-6">
             <div
-              class="card service-card h-100 wow fadeInUp"
+              class="service-radio-form wow fadeInRight"
               data-wow-duration="1s"
               data-wow-delay="0.3s"
             >
-              <div class="card-img-container">
-                <img
-                  src="assets/images/about-left-image.png"
-                  class="card-img-top"
-                  alt="Service Image"
-                />
+              <h3 class="mb-4">Choose Your Plan</h3>
+
+              <div class="radio-options">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="planType"
+                    id="individualRadio"
+                    value="Individual"
+                    checked
+                  />
+                  <label class="form-check-label" for="individualRadio">
+                    <span class="radio-title">Individual</span>
+                    <span class="radio-description"
+                      >Perfect for single coverage</span
+                    >
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="planType"
+                    id="familyRadio"
+                    value="Family"
+                  />
+                  <label class="form-check-label" for="familyRadio">
+                    <span class="radio-title">Family</span>
+                    <span class="radio-description"
+                      >Coverage for your whole family</span
+                    >
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="planType"
+                    id="seniorRadio"
+                    value="Senior"
+                  />
+                  <label class="form-check-label" for="seniorRadio">
+                    <span class="radio-title">Senior</span>
+                    <span class="radio-description"
+                      >Specialized care for seniors</span
+                    >
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="planType"
+                    id="groupRadio"
+                    value="Group"
+                  />
+                  <label class="form-check-label" for="groupRadio">
+                    <span class="radio-title">Group</span>
+                    <span class="radio-description"
+                      >Ideal for organizations</span
+                    >
+                  </label>
+                </div>
               </div>
-              <div class="card-body">
-                <h5 class="card-title">Ward - 60K</h5>
-                <p class="card-text">
-                  -60K ABL<br />
-                  -Inpatient, Outpatient, Emergency, APE, Mental Care &
-                  Insurance<br />
-                  -Ward Room
-                </p>
-                <a href="#" class="btn btn-primary">&#8369; 1,200 Monthly</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div
-              class="card service-card h-100 wow fadeInUp"
-              data-wow-duration="1s"
-              data-wow-delay="0.4s"
-            >
-              <div class="card-img-container">
-                <img
-                  src="assets/images/about-left-image.png"
-                  class="card-img-top"
-                  alt="Service Image"
-                />
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Semi Private - 60K</h5>
-                <p class="card-text">
-                  -60K ABL<br />
-                  -Inpatient, Outpatient, Emergency, APE, Mental Care &
-                  Insurance<br />
-                  -Semi Private Room
-                </p>
-                <a href="#" class="btn btn-primary">&#8369; 1,800 Monthly</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div
-              class="card service-card h-100 wow fadeInUp"
-              data-wow-duration="1s"
-              data-wow-delay="0.5s"
-            >
-              <div class="card-img-container">
-                <img
-                  src="assets/images/about-left-image.png"
-                  class="card-img-top"
-                  alt="Service Image"
-                />
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Private - 60K</h5>
-                <p class="card-text">
-                  -60K ABL<br />
-                  -Inpatient, Outpatient, Emergency, APE, Mental Care &
-                  Insurance<br />
-                  -Private Room
-                </p>
-                <a href="#" class="btn btn-primary">&#8369; 2,800 Monthly</a>
+
+              <div class="text-end mt-4">
+                <a href="#" id="plan-choose">
+                <button class="services-next-button" onclick="PlanChoose(event)">
+                  Next Step <i class="fa fa-arrow-right"></i>
+                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -664,7 +594,7 @@
             </a>
           </div>
           <div class="col-lg-3 col-sm-6 pt-4">
-            <a href="https://claim135.net/">
+            <a href="conforme.html">
               <div
                 class="item wow bounceInUp"
                 data-wow-duration="1s"
@@ -674,17 +604,14 @@
                   <h4>Conforme</h4>
                 </div>
                 <div class="showed-content">
-                  <img
-                    src="assets/images/link image/conforme.png"
-                    alt=""
-                  />
+                  <img src="assets/images/link image/conforme.png" alt="" />
                   <p>Conforme</p>
                 </div>
               </div>
             </a>
           </div>
           <div class="col-lg-3 col-sm-6 pt-4">
-            <a href="https://claim135.net/">
+            <a href="SmartCareBenefit.html">
               <div
                 class="item wow bounceInUp"
                 data-wow-duration="1s"

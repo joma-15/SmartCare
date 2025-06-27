@@ -175,3 +175,106 @@ ul {
 .text-center {
   text-align: center !important;
 }
+
+/* Services Section Styling */
+.our-services {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+
+.service-image-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.service-image-container img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.service-radio-form {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+}
+
+.service-radio-form h3 {
+  color: #2a2a2a;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.service-radio-form h3:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 3px;
+  background: #4b8ef1;
+}
+
+.radio-options .form-check {
+  margin-bottom: 15px;
+  padding-left: 35px;
+}
+
+.radio-options .form-check-input {
+  width: 22px;
+  height: 22px;
+  margin-left: -35px;
+  margin-top: 5px;
+  border: 2px solid #4b8ef1;
+}
+
+.radio-options .form-check-input:checked {
+  background-color: #4b8ef1;
+  border-color: #4b8ef1;
+}
+
+.radio-options .form-check-label {
+  display: block;
+  cursor: pointer;
+}
+
+.radio-options .radio-title {
+  display: block;
+  font-weight: 500;
+  color: #2a2a2a;
+  font-size: 18px;
+}
+
+.radio-options .radio-description {
+  display: block;
+  font-size: 14px;
+  color: #6c757d;
+  margin-top: 3px;
+}
+
+/* Specific button style for services section only */
+.services-next-button {
+  display: inline-block;
+  background-color: #4b8ef1;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.services-next-button:hover {
+  background-color: #3a7bd5;
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}

@@ -4,183 +4,253 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="assets/css/modify.css  " />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <style>
+      .our-services {
+        padding: 60px 0;
+      }
+      .plans {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 30px;
+      }
+      .service-card {
+        border-radius: 10px;
+        overflow: hidden;
+        border: 1px solid #ddd;
+        margin-bottom: 30px;
+        height: 100%;
+      }
+      .card-img-container {
+        height: 200px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #f8f9fa;
+      }
+      .card-img-top {
+        height: 100%;
+        width: auto;
+        max-width: 100%;
+        object-fit: contain;
+      }
+      .card-body {
+        padding: 20px;
+      }
+      .card-title {
+        font-weight: 700;
+        margin-bottom: 15px;
+      }
+      .card-text {
+        margin-bottom: 20px;
+      }
+      .btn-primary {
+        padding: 8px 20px;
+        border-radius: 5px;
+      }
+      
+      /* Center cards in 2-column layout */
+      .card-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .card-col {
+        flex: 0 0 calc(50% - 30px);
+        max-width: calc(50% - 30px);
+        padding: 0 15px;
+        margin-bottom: 30px;
+      }
+      
+      /* Responsive adjustments */
+      @media (max-width: 992px) {
+        .card-col {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+      }
+    </style>
   </head>
   <body>
     <div id="services" class="our-services section">
       <div class="container">
+        <!-- 40,000 Health Plans Section -->
         <div class="row">
-          <div class="col-lg-6 offset-lg-3">
-            <div
-              class="section-heading wow bounceIn"
-              data-wow-duration="1s"
-              data-wow-delay="0.2s"
-            ></div>
+          <div class="col-12 text-center mb-5">
+            <h1 class="plans">40,000 Health Plans</h1>
           </div>
         </div>
-        <div class="row">
-          <!-- 100,000 Health Plans Section -->
-          <div class="col-12 text-center mb-5">
-            <h1 class="plans">100,000 Health Plans</h1>
-          </div>
-
-          <!-- Row 1 -->
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div
-              class="card service-card h-100 wow fadeInUp"
-              data-wow-duration="1s"
-              data-wow-delay="0.3s"
-            >
+        
+        <div class="card-row">
+          <!-- Card 1 -->
+          <div class="card-col">
+            <div class="card service-card h-100 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
               <div class="card-img-container">
-                <img
-                  src="assets/images/about-left-image.png"
-                  class="card-img-top"
-                  alt="Service Image"
-                />
+                <img src="assets/images/about-left-image.png" class="card-img-top" alt="Service Image" />
               </div>
               <div class="card-body">
-                <h5 class="card-title">Ward - 100K</h5>
+                <h5 class="card-title">40K ABL - Ward</h5>
                 <p class="card-text">
                   -100K ABL<br />
-                  -Inpatient, Outpatient, Emergency, APE, Mental Care &
-                  Insurance<br />
+                  -Inpatient, Outpatient, Emergency, APE, Mental Care & Insurance<br />
                   -Ward Room
                 </p>
                 <a href="#" class="btn btn-primary">&#8369; 1,200 Monthly</a>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div
-              class="card service-card h-100 wow fadeInUp"
-              data-wow-duration="1s"
-              data-wow-delay="0.4s"
-            >
+          
+          <!-- Card 2 -->
+          <div class="card-col">
+            <div class="card service-card h-100 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
               <div class="card-img-container">
-                <img
-                  src="assets/images/about-left-image.png"
-                  class="card-img-top"
-                  alt="Service Image"
-                />
+                <img src="assets/images/about-left-image.png" class="card-img-top" alt="Service Image" />
               </div>
               <div class="card-body">
-                <h5 class="card-title">Semi Private - 100K</h5>
+                <h5 class="card-title">40K MBL - Ward</h5>
                 <p class="card-text">
                   -100K ABL<br />
-                  -Inpatient, Outpatient, Emergency, APE, Mental Care &
-                  Insurance<br />
+                  -Inpatient, Outpatient, Emergency, APE, Mental Care & Insurance<br />
                   -Semi Private Room
                 </p>
                 <a href="#" class="btn btn-primary">&#8369; 1,800 Monthly</a>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div
-              class="card service-card h-100 wow fadeInUp"
-              data-wow-duration="1s"
-              data-wow-delay="0.5s"
-            >
-              <div class="card-img-container">
-                <img
-                  src="assets/images/about-left-image.png"
-                  class="card-img-top"
-                  alt="Service Image"
-                />
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Private - 100k</h5>
-                <p class="card-text">
-                  -100K ABL<br />
-                  -Inpatient, Outpatient, Emergency, APE, Mental Care &
-                  Insurance<br />
-                  -Private Room
-                </p>
-                <a href="#" class="btn btn-primary">&#8369; 2,800 Monthly</a>
-              </div>
-            </div>
-          </div>
+        </div>
 
-          <!-- 60,000 Health Plans Section -->
+        <!-- 60,000 Health Plans Section -->
+        <div class="row">
           <div class="col-12 text-center mt-5 mb-5">
             <h1 class="plans">60,000 Health Plans</h1>
           </div>
-
-          <!-- Row 2 -->
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div
-              class="card service-card h-100 wow fadeInUp"
-              data-wow-duration="1s"
-              data-wow-delay="0.3s"
-            >
+        </div>
+        
+        <div class="card-row">
+          <!-- Card 1 -->
+          <div class="card-col">
+            <div class="card service-card h-100 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
               <div class="card-img-container">
-                <img
-                  src="assets/images/about-left-image.png"
-                  class="card-img-top"
-                  alt="Service Image"
-                />
+                <img src="assets/images/about-left-image.png" class="card-img-top" alt="Service Image" />
               </div>
               <div class="card-body">
-                <h5 class="card-title">Ward - 60K</h5>
+                <h5 class="card-title">60K ABL - Ward</h5>
                 <p class="card-text">
                   -60K ABL<br />
-                  -Inpatient, Outpatient, Emergency, APE, Mental Care &
-                  Insurance<br />
+                  -Inpatient, Outpatient, Emergency, APE, Mental Care & Insurance<br />
                   -Ward Room
                 </p>
                 <a href="#" class="btn btn-primary">&#8369; 1,200 Monthly</a>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div
-              class="card service-card h-100 wow fadeInUp"
-              data-wow-duration="1s"
-              data-wow-delay="0.4s"
-            >
+          
+          <!-- Card 2 -->
+          <div class="card-col">
+            <div class="card service-card h-100 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
               <div class="card-img-container">
-                <img
-                  src="assets/images/about-left-image.png"
-                  class="card-img-top"
-                  alt="Service Image"
-                />
+                <img src="assets/images/about-left-image.png" class="card-img-top" alt="Service Image" />
               </div>
               <div class="card-body">
-                <h5 class="card-title">Semi Private - 60K</h5>
+                <h5 class="card-title">60K MBL - Ward</h5>
                 <p class="card-text">
                   -60K ABL<br />
-                  -Inpatient, Outpatient, Emergency, APE, Mental Care &
-                  Insurance<br />
+                  -Inpatient, Outpatient, Emergency, APE, Mental Care & Insurance<br />
                   -Semi Private Room
                 </p>
                 <a href="#" class="btn btn-primary">&#8369; 1,800 Monthly</a>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div
-              class="card service-card h-100 wow fadeInUp"
-              data-wow-duration="1s"
-              data-wow-delay="0.5s"
-            >
+        </div>
+
+        <!-- 100,000 Health Plans Section -->
+        <div class="row">
+          <div class="col-12 text-center mt-5 mb-5">
+            <h1 class="plans">100,000 Health Plans</h1>
+          </div>
+        </div>
+        
+        <div class="card-row">
+          <!-- Card 1 -->
+          <div class="card-col">
+            <div class="card service-card h-100 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
               <div class="card-img-container">
-                <img
-                  src="assets/images/about-left-image.png"
-                  class="card-img-top"
-                  alt="Service Image"
-                />
+                <img src="assets/images/about-left-image.png" class="card-img-top" alt="Service Image" />
               </div>
               <div class="card-body">
-                <h5 class="card-title">Private - 60K</h5>
+                <h5 class="card-title">100K ABL - Ward</h5>
                 <p class="card-text">
-                  -60K ABL<br />
-                  -Inpatient, Outpatient, Emergency, APE, Mental Care &
-                  Insurance<br />
+                  -100K ABL<br />
+                  -Inpatient, Outpatient, Emergency, APE, Mental Care & Insurance<br />
+                  -Ward Room
+                </p>
+                <a href="#" class="btn btn-primary">&#8369; 2,400 Monthly</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Card 2 -->
+          <div class="card-col">
+            <div class="card service-card h-100 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+              <div class="card-img-container">
+                <img src="assets/images/about-left-image.png" class="card-img-top" alt="Service Image" />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">100K MBL - Ward</h5>
+                <p class="card-text">
+                  -100K ABL<br />
+                  -Inpatient, Outpatient, Emergency, APE, Mental Care & Insurance<br />
+                  -Semi Private Room
+                </p>
+                <a href="#" class="btn btn-primary">&#8369; 3,000 Monthly</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 120,000 Health Plans Section -->
+        <div class="row">
+          <div class="col-12 text-center mt-5 mb-5">
+            <h1 class="plans">120,000 Health Plans</h1>
+          </div>
+        </div>
+        
+        <div class="card-row">
+          <!-- Card 1 -->
+          <div class="card-col">
+            <div class="card service-card h-100 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+              <div class="card-img-container">
+                <img src="assets/images/about-left-image.png" class="card-img-top" alt="Service Image" />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">120K ABL - Ward</h5>
+                <p class="card-text">
+                  -120K ABL<br />
+                  -Inpatient, Outpatient, Emergency, APE, Mental Care & Insurance<br />
+                  -Ward Room
+                </p>
+                <a href="#" class="btn btn-primary">&#8369; 3,000 Monthly</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Card 2 -->
+          <div class="card-col">
+            <div class="card service-card h-100 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+              <div class="card-img-container">
+                <img src="assets/images/about-left-image.png" class="card-img-top" alt="Service Image" />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">120K MBL - Ward</h5>
+                <p class="card-text">
+                  -120K ABL<br />
+                  -Inpatient, Outpatient, Emergency, APE, Mental Care & Insurance<br />
                   -Private Room
                 </p>
-                <a href="#" class="btn btn-primary">&#8369; 2,800 Monthly</a>
+                <a href="#" class="btn btn-primary">&#8369; 3,600 Monthly</a>
               </div>
             </div>
           </div>
