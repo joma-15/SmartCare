@@ -7,4 +7,10 @@ function PlanChoose(event){
     if (selectedPlan == "Individual" || selectedPlan == "Family" || selectedPlan == "Senior") {
             window.location.href = "Plans.html"
     }
+
+    if (selectedPlan == "Group") {
+        const modal = new bootstrap.Modal(document.getElementById('group-modal')); 
+        modal.show();
+             
+    }
 }
