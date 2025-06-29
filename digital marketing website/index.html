@@ -129,6 +129,7 @@
         </div>
       </div>
     </div>
+    <div>
 
     <div id="about" class="about-us section">
       <div class="container">
@@ -312,7 +313,159 @@
             >
               Close
             </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              id="openClientDetails"
+              onclick="openClientModal()"
+            >
+              Save changes
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="clientDetailsModal"
+      tabindex="-1"
+      aria-labelledby="clientDetailsModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="clientDetailsModalLabel">
+              Client Information
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <form id="clientForm">
+              <!-- Full Name -->
+              <div class="mb-3">
+                <label class="form-label">Full Name</label>
+                <div class="row g-2">
+                  <div class="col-md-5">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Last Name"
+                      id="LastName"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-5">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="FirstName"
+                      placeholder="First Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-2">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="M.I."
+                      id="MiddleName"
+                      maxlength="1"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Birthdate -->
+              <div class="mb-3">
+                <label class="form-label">Birthdate</label>
+                <input type="date" class="form-control" id="bday" required />
+              </div>
+
+              <!-- Address -->
+              <div class="mb-3">
+                <label class="form-label">Address</label>
+                <textarea
+                  class="form-control"
+                  rows="2"
+                  placeholder="Complete Address"
+                  id="address"
+                  required
+                ></textarea>
+              </div>
+
+              <!-- Email -->
+              <div class="mb-3">
+                <label class="form-label">Email Address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="example@domain.com"
+                  id="email"
+                  required
+                />
+              </div>
+
+              <!-- Gender -->
+              <div class="mb-3">
+                <label class="form-label">Gender</label>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="gender"
+                    id="male"
+                    value="Male"
+                    required
+                  />
+                  <label class="form-check-label" for="male">Male</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="gender"
+                    id="female"
+                    value="Female"
+                  />
+                  <label class="form-check-label" for="female">Female</label>
+                </div>
+              </div>
+
+              <!-- Civil Status -->
+              <div class="mb-3">
+                <label class="form-label">Civil Status</label>
+                <select class="form-select" id="civil-status" required>
+                  <option selected disabled value="">Select status</option>
+                  <option>Single</option>
+                  <option>Married</option>
+                  <option>Widowed</option>
+                  <option>Divorced</option>
+                  <option>Separated</option>
+                </select>
+              </div>
+            </form>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <button type="submit" form="clientForm" class="btn btn-primary">
+              Next
+            </button>
           </div>
         </div>
       </div>
@@ -883,6 +1036,7 @@
 
     <!-- Scripts -->
     <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="enrollment.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/owl-carousel.js"></script>
     <script src="assets/js/animation.js"></script>
