@@ -126,7 +126,7 @@ async function submitData(data){
   // Map your data to Google Form fields (verify these entry IDs)
   const formFields = {
   'entry.118683267': localStorage.getItem('selectedPlan'),
-  'entry.328719651': data.fullName,
+  'entry.1337285375': data.fullName,
   'entry.1226942228_year': data.birthDate.year,
   'entry.1226942228_month': data.birthDate.month,
   'entry.1226942228_day': data.birthDate.day,
@@ -198,3 +198,28 @@ async function submitOnClick(event){
     window.location.href = "index.html";
   }
 }
+
+function showPaymentDetails() {
+        const methods = document.querySelectorAll(".payment-info");
+        methods.forEach((m) => (m.style.display = "none"));
+
+        const selected = document.getElementById("paymentSelect").value;
+        document.getElementById(selected).style.display = "block";
+      }
+
+      function copyText(text) {
+        navigator.clipboard.writeText(text);
+        alert("Copied to clipboard!");
+      }
+
+      async function sendEmail() {
+        const emailAddress = "adelantarjhonmarcel@gmail.com";
+
+        try {
+          //fetch data from the email js api
+          const data = fetch("email/js");
+          console.log("the data has been fetch successfully", data);
+        } catch (error) {
+          console.log("An errored has been occured");
+        }
+      }
